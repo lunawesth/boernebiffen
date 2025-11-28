@@ -41,32 +41,75 @@
   --color-orange: #ffac3f;
   --color-peach: #fbe4c7;
   --text-color-brown: #352B29;
+  --text-color-btn: #FCFCF4;
+
 }
 
 @layer base {
+   @media (min-width: 1024px){
+     .h1-forside {
+       font-size: var(--text-32);
+       font-family: var(--font-bold);
+       color: var(--text-color-brown);
+      }
+      
+      .h1-liste-single {
+        font-size: var(--text-40);
+        font-family: var(--font-regular);
+        color: var(--text-color-brown);  
+      }
+      
+      h2 {
+        font-size: var(--text-20);
+        font-family: var(--font-bold);  
+        color: var(--text-color-brown);
+      }
+      
+      .p-forside {
+        font-size: var(--text-20);
+        font-family: var(--font-italic);
+        color: var(--text-color-brown);
+      }
+      
+      .p-minutter {
+        font-size: var(--text-16);    
+        font-family: var(--font-light);
+        color: var(--text-color-brown);
+      }
+      
+      .knap-logind {
+        font-size: var(--text-20);    
+        font-family: var(--font-regular);
+        color: var(--text-color-btn);
+      }
+      
+      .knap-kortfilm {
+        font-size: var(--text-20);    
+        font-family: var(--font-bold);
+        color: var(--text-color-btn);
+      }
+    }
+      
+
+  @media (min-width: 768px) {
   .h1-forside {
-    font-size: var(--text-32);
-    font-family: var(--font-bold);
-    color: var(--text-color-brown);
+    font-size: var(--text-24);
   }
 
   .h1-liste-single {
-    font-size: var(--text-40);
-    font-family: var(--font-regular);  
+    font-size: var(--text-24);
   }
 
-  h2 {
-    font-size: var(--text-20);
-    font-family: var(--font-bold);  
+  h2{
+    font-size: var(--text-14);
   }
 
-  .p-forside {
-    font-size: var(--text-20);
-    font-family: var(--font-italic);
-    color: var(--text-color-brown);
+  .p-minutter{
+    font-size: var(--text-14);
   }
+  
 
-  @media (max-width: 768px) {
+
   }
 }
 

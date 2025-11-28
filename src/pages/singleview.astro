@@ -7,7 +7,7 @@ import Card from "../components/Card.astro";
   <MainLayout>
     <section>
       <div
-        class="relative bg-peach rounded-2xl p-4 mx-2 flex place-content-center md:justify-start"
+        class="relative bg-peach rounded-2xl p-10 mt-20 md:mt-40 mx-11 flex place-content-center md:justify-start"
       >
         <div class="card relative">
           <img
@@ -16,21 +16,21 @@ import Card from "../components/Card.astro";
             class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 md:w-30 cursor-pointer"
           />
           <img
-            src="img1.png"
+            src="img19.png"
             alt="lillefinger"
-            class="rounded-3xl w-110 md:w-220"
+            class="rounded-3xl w-110 md:w-270"
           />
-          <h2>Lillefinger - Hindbærret</h2>
-          <div class="flex flex-row">
-            <img src="time.png" alt="Ur" />
+          <h2 class="pt-5">Lille Frø</h2>
+          <div class="flex flex-row pt-3 gap-3">
+            <img src="ur.svg" alt="Ur" />
             <p>5 min</p>
           </div>
         </div>
       </div>
 
-      <h2 class="mx-2">Kortfilm i samme genre</h2>
+      <h1 class="mx-11 mt-40 h1-liste-single pb-5">Kortfilm i samme genre</h1>
       <div
-        class="bg-peach rounded-2xl mx-2 mb-20 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))]"
+        class="bg-peach rounded-2xl mx-11 mb-65 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))]"
       >
         <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
 
@@ -38,7 +38,9 @@ import Card from "../components/Card.astro";
 
         <Card title="De små vilde: efterår" text="13 min" image="img6.png" />
 
-        <p class="text-center cursor-pointer py-4">Se alle &#8594;</p>
+        <h2 class="text-center cursor-pointer py-4 col-span-full">
+          Se alle &#8594;
+        </h2>
       </div>
     </section>
   </MainLayout>
