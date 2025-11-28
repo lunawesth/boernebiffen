@@ -2,13 +2,19 @@
 const { title, text, image } = Astro.props;
 ---
 
-<section class="flex place-content-center py-2">
+<section class="flex place-content-center">
   <a href="singleview">
-    <div class="card">
+    <div class="card relative p-4">
+      <img
+        src="play-btn.png"
+        alt="Play knap"
+        class="absolute top-6 right-6 w-12"
+      />
       <img src={image} alt={title} class="rounded-3xl w-110" />
       <h2>{title}</h2>
       <div class="flex flex-row">
-        <img src="time.png" alt="Ur" /><p>{text}</p>
+        <img src="time.png" alt="Ur" />
+        <p>{text}</p>
       </div>
     </div>
   </a>

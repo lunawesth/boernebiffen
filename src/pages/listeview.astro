@@ -4,94 +4,94 @@ import Card from "../components/Card.astro";
 import "../styles/tailwind.css";
 ---
 
-<div class="bg-[url(baggrund-desk.png)] bg-fixed">
+<div class="bg-[url(baggrund-mo.png)] md:bg-[url(baggrund-desk.png)] bg-fixed">
   <MainLayout title="Listeview">
-    <h2 class="mx-2 pt-4">Anbefaldet til dig</h2>
-    <div
-      class="bg-peach rounded-2xl mx-2 py-4 grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
-    >
-      <Card title="Lillefinger - Hindbærret" text="5 min" image="img1.png" />
+    <h2 class="mx-2">Anbefalet til dig</h2>
+    <div class="bg-peach rounded-2xl mx-2">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+        <Card title="Lillefinger - Hindbærret" text="5 min" image="img1.png" />
 
-      <Card title="Den lille fugl og egernet" text="4 min" image="img2.png" />
+        <Card title="Den lille fugl og egernet" text="4 min" image="img2.png" />
 
-      <Card
-        title="Rita og Krokodille: Halloween"
-        text="5 min"
-        image="img3.png"
-      />
+        <Card
+          title="Rita og Krokodille: Halloween"
+          text="5 min"
+          image="img3.png"
+        />
 
-      <Card title="Rokketanden" text="5 min" image="img10.png" />
+        <Card title="Rokketanden" text="5 min" image="img10.png" />
 
-      <Card
-        title="Hunden Ib 1:26 - Ib bliver forfulgt af nogle bænkebidere"
-        text="5 min"
-        image="img13.png"
-      />
+        <Card
+          title="Hunden Ib 1:26 - Ib bliver forfulgt af nogle bænkebidere"
+          text="5 min"
+          image="img13.png"
+        />
 
-      <Card title="Astons sten" text="9 min" image="img15.png" />
+        <Card title="Astons sten" text="9 min" image="img15.png" />
+      </div>
 
-      <p class="text-center cursor-pointer pt-4 md:grid-cols-subgrid">
+      <p class="text-center cursor-pointer py-4 md:py-6 md:grid-cols-subgrid">
         Se alle &#8594;
       </p>
     </div>
 
     <h2 class="mx-2 pt-4">De smås favoritter</h2>
-    <div
-      class="bg-peach rounded-2xl mx-2 py-4 grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
-    >
-      <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
+    <div class="bg-peach rounded-2xl mx-2">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+        <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
 
-      <Card title="Løven og musen" text="2 min" image="img5.png" />
+        <Card title="Løven og musen" text="2 min" image="img5.png" />
 
-      <Card title="De små vilde: efterår" text="13 min" image="img6.png" />
+        <Card title="De små vilde: efterår" text="13 min" image="img6.png" />
 
-      <Card
-        title="Vitello tigger en masse slik"
-        text="7 min"
-        image="img7.png"
-      />
+        <Card
+          title="Vitello tigger en masse slik"
+          text="7 min"
+          image="img7.png"
+        />
 
-      <Card title="Lygtefisk" text="3 min" image="img8.png" />
+        <Card title="Lygtefisk" text="3 min" image="img8.png" />
 
-      <Card title="Prik og Plet farer vild" text="7 min" image="img9.png" />
+        <Card title="Prik og Plet farer vild" text="7 min" image="img9.png" />
+      </div>
 
-      <p class="text-center cursor-pointer pt-4">Se alle &#8594;</p>
+      <p class="text-center cursor-pointer py-4 md:py-6">Se alle &#8594;</p>
     </div>
 
     <h2 class="mx-2 pt-4">Se videre</h2>
-    <div
-      class="bg-peach rounded-2xl mx-2 py-4 grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
-    >
-      <Card title="Rokketanden" text="5 min" image="img10.png" />
+    <div class="bg-peach rounded-2xl mx-2">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+        <Card title="Rokketanden" text="5 min" image="img10.png" />
 
-      <Card title="Næsehornsdans" text="3 min" image="img11.png" />
+        <Card title="Næsehornsdans" text="3 min" image="img11.png" />
 
-      <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
+        <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
+      </div>
 
-      <p class="text-center cursor-pointer pt-4">Se alle &#8594;</p>
+      <p class="text-center cursor-pointer py-4 md:py-6">Se alle &#8594;</p>
     </div>
 
     <h2 class="mx-2 pt-4">Andre ser lige nu</h2>
-    <div
-      class="bg-peach rounded-2xl mx-2 py-4 mb-10 grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
-    >
-      <Card
-        title="Hunden Ib 1:26 - Ib bliver forfulgt af nogle bænkebidere"
-        text="5 min"
-        image="img13.png"
-      />
+    <div class="bg-peach rounded-2xl mx-2 mb-60">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+        <Card
+          title="Hunden Ib 1:26 - Ib bliver forfulgt af nogle bænkebidere"
+          text="5 min"
+          image="img13.png"
+        />
 
-      <Card title="Den sidste efterårsdag" text="7 min" image="img14.png" />
+        <Card title="Den sidste efterårsdag" text="7 min" image="img14.png" />
 
-      <Card title="Astons sten" text="9 min" image="img15.png" />
+        <Card title="Astons sten" text="9 min" image="img15.png" />
 
-      <Card title="Prik og Plet farer vild" text="7 min" image="img9.png" />
+        <Card title="Prik og Plet farer vild" text="7 min" image="img9.png" />
 
-      <Card title="November" text="4 min" image="img17.png" />
+        <Card title="November" text="4 min" image="img17.png" />
 
-      <Card title="Ballerina" text="11 min" image="img18.png" />
+        <Card title="Ballerina" text="11 min" image="img18.png" />
+      </div>
 
-      <p class="text-center cursor-pointer pt-4">Se alle &#8594;</p>
+      <p class="text-center cursor-pointer py-4 md:py-6">Se alle &#8594;</p>
     </div>
   </MainLayout>
 </div>
