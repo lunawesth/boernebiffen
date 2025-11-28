@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<div class="bg-[url(baggrund-desk.png)] bg-fixed">
+  <MainLayout>
+    <section>
+      <div class="bg-peach rounded-2xl py-4 mx-2 flex md:justify-start md:p-20">
+        <Card title="Lillefinger - Hindbærret" text="5 min" image="img1.png" />
+      </div>
+
+      <h2 class="mx-2">Kortfilm i samme genre</h2>
+      <div
+        class="bg-peach rounded-2xl mx-2 py-4 mb-20 grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
+      >
+        <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
+
+        <Card title="Løven og musen" text="2 min" image="img5.png" />
+
+        <Card title="De små vilde: efterår" text="13 min" image="img6.png" />
+
+        <p class="text-center cursor-pointer pt-4">Se alle &#8594;</p>
+      </div>
+    </section>
+  </MainLayout>
+</div>

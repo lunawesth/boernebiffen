@@ -1,0 +1,15 @@
+---
+const { title, text, image } = Astro.props;
+---
+
+<section class="flex place-content-center py-2">
+  <a href="singleview">
+    <div class="card">
+      <img src={image} alt={title} class="rounded-3xl w-110" />
+      <h2>{title}</h2>
+      <div class="flex flex-row">
+        <img src="time.png" alt="Ur" /><p>{text}</p>
+      </div>
+    </div>
+  </a>
+</section>

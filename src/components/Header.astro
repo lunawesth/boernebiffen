@@ -1,6 +1,50 @@
 ---
+
 ---
-<div class="pb-6 border-b-2 prose">
-    Et lille eksempel med
-</div>
-    
+
+<section class="flex flex-row place-content-between p-2 md:p-6">
+  <div>
+    <a href="index">
+      <img src="boernebiffen-logo.png" alt="Logo" class="w-40 h-auto" />
+    </a>
+  </div>
+  <div class="flex flex-row gap-4">
+    <div>
+      <img
+        src="Search.png"
+        alt="Søg"
+        class="w-8 h-8 cursor-pointer"
+        id="search-icon"
+      />
+      <input
+        type="text"
+        id="search-field"
+        placeholder="Søg..."
+        class="hidden border p-2"
+      />
+    </div>
+    <img src="Heart.png" alt="Favoritter" class="w-8 h-8 cursor-pointer" />
+    <img src="User.png" alt="Bruger" class="w-8 h-8 cursor-pointer" />
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  const searchIcon = document.getElementById("search-icon");
+  const searchField = document.getElementById("search-field");
+
+  searchIcon.addEventListener("click", () => {
+    if (searchField.classList.contains("hidden")) {
+      searchField.classList.remove("hidden");
+    } else {
+      searchField.classList.add("hidden");
+    }
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
