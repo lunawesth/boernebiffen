@@ -4,19 +4,19 @@ import Card from "../components/Card.astro";
 ---
 
 <div class="bg-[url(baggrund-mo.png)] md:bg-[url(baggrund-desk.png)] bg-fixed">
-  <MainLayout>
+  <MainLayout title="Singleview">
     <section>
       <div
         class="relative bg-peach rounded-2xl p-10 mt-20 md:mt-40 mx-11 flex place-content-center md:justify-start"
       >
         <div class="card relative">
           <img
-            src="play-btn.png"
+            src="/play-btn.png"
             alt="Play knap"
             class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 md:w-30 cursor-pointer"
           />
           <img
-            src="img19.png"
+            src="/img19.png"
             alt="lillefinger"
             class="rounded-3xl w-110 md:w-270"
           />
@@ -32,11 +32,11 @@ import Card from "../components/Card.astro";
       <div
         class="bg-peach rounded-2xl mx-11 mb-65 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))]"
       >
-        <Card title="Den kæmpestore gulerod" text="5 min" image="img4.png" />
+        <Card title="Den kæmpestore gulerod" text="5 min" image="/img4.png" />
 
-        <Card title="Løven og musen" text="2 min" image="img5.png" />
+        <Card title="Løven og musen" text="2 min" image="/img5.png" />
 
-        <Card title="De små vilde: efterår" text="13 min" image="img6.png" />
+        <Card title="De små vilde: efterår" text="13 min" image="/img6.png" />
 
         <h2 class="text-center cursor-pointer py-4 col-span-full">
           Se alle &#8594;
