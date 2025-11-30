@@ -1,8 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import PasswordGate from "../components/PasswordGate.astro";
 ---
 
 <MainLayout title="Forside" hideHeaderFooter={true}>
+  <PasswordGate />
   <header
     class="absolute top-0 left-0 w-full z-20 p-2 md:p-6 flex flex-row justify-between md:justify-center md:items-center"
   >
