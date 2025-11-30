@@ -4,11 +4,13 @@ import Card from "../components/Card.astro";
 import "../styles/tailwind.css";
 ---
 
-<div class="bg-[url(baggrund-mo.png)] md:bg-[url(baggrund-desk.png)] bg-fixed">
+<div class="bg-[url(/baggrund-mo.png)] md:bg-[url(baggrund-desk.png)] bg-fixed">
   <MainLayout title="Listeview">
     <h1 class="h1-liste-single mx-11 mt-40 pb-5">Anbefalet til dig</h1>
-    <div class="bg-peach rounded-2xl mx-11">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+    <div class="bg-peach rounded-2xl mx-9 md:p-4">
+      <div
+        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
+      >
         <Card title="Lillefinger - Hindbærret" text="5 min" image="/img1.png" />
 
         <Card
@@ -36,8 +38,10 @@ import "../styles/tailwind.css";
     </div>
 
     <h1 class="h1-liste-single mx-11 pt-4 mt-40 pb-5">De smås favoritter</h1>
-    <div class="bg-peach rounded-2xl mx-11">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+    <div class="bg-peach rounded-2xl mx-9 md:p-4">
+      <div
+        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
+      >
         <Card title="Den kæmpestore gulerod" text="5 min" image="/img4.png" />
 
         <Card title="Løven og musen" text="2 min" image="/img5.png" />
@@ -59,8 +63,10 @@ import "../styles/tailwind.css";
     </div>
 
     <h1 class="h1-liste-single mx-11 pt-4 mt-40 pb-5">Se videre</h1>
-    <div class="bg-peach rounded-2xl mx-11">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+    <div class="bg-peach rounded-2xl mx-9 md:p-4">
+      <div
+        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
+      >
         <Card title="Rokketanden" text="5 min" image="/img10.png" />
 
         <Card title="Næsehornsdans" text="3 min" image="/img11.png" />
@@ -72,8 +78,10 @@ import "../styles/tailwind.css";
     </div>
 
     <h1 class="h1-liste-single mx-11 pt-4 mt-40 pb-5">Andre ser lige nu</h1>
-    <div class="bg-peach rounded-2xl mx-11 mb-70">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+    <div class="bg-peach rounded-2xl mx-9 mb-70 md:p-4">
+      <div
+        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]"
+      >
         <Card title="Lille Frø" text="5 min" image="/img19.png" />
 
         <Card title="Den sidste efterårsdag" text="7 min" image="/img14.png" />
