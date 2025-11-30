@@ -1,3 +1,37 @@
 ---
 import Card from "../components/Card.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/tailwind.css";
 ---
+
+<MainLayout title="Komponent bibliotek">
+  <section class="mx-4 md:mx-30">
+    <div class="border-b py-10">
+      <h1 class="text-7xl pb-7">Komponent bibliotek</h1>
+      <p>
+        Komponent bibliotek til projekt Børnebiffen.
+        <br />Komponent biblioteket samler de komponenter, der anvendes på sitet
+        (på nær header/navbar og footer).
+      </p>
+    </div>
+
+    <div class="border-b py-10">
+      <h2 class="text-2xl pb-7">Typografi</h2>
+      <h1 class="h1-liste-single">H1 Liste single</h1>
+      <h1 class="h1-forside">H1 Forside</h1>
+      <h2>H2</h2>
+      <p class="p-forside">P Forside</p>
+      <p class="p-minutter">P tid</p>
+    </div>
+
+    <div class="flex justify-start items-start flex-col py-10">
+      <h2 class="text-2xl pb-7">Cards</h2>
+      <Card
+        title="Rokketanden"
+        text="5 min"
+        image="img10.png"
+        class="flex justify-start"
+      />
+    </div>
+  </section>
+</MainLayout>
