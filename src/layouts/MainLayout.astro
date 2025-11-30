@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 const { title, hideHeaderFooter = false } = Astro.props;
+import PasswordGate from "../components/PasswordGate.astro";
 ---
 
 <html lang="da">
@@ -15,6 +16,7 @@ const { title, hideHeaderFooter = false } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <PasswordGate />
     <header>
       {!hideHeaderFooter && <Header />}
     </header>
